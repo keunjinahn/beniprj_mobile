@@ -1,0 +1,906 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="759dp"
+            android:background="@drawable/drawable_shape"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/drawable_shape_1"
+                android:gravity="left|top"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_shape_2"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Log In"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_shape_3"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="Sign Up"
+                        android:textColor="#FFFAFAF9"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23.5dp"
+                android:layout_marginBottom="-0.5dp"
+                android:clipToPadding="false"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="0.5dp"
+                android:paddingTop="0.5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_marginTop="-0.5dp"
+                    android:layout_marginBottom="-0.5dp"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Sign Up"
+                    android:textColor="#FF292927"
+                    android:textSize="36dp" />
+
+                <ImageView
+                    android:layout_width="39.02dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drawable_image" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="358dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="24dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="암, 임신 및 고혈압이면\nLED 광치료기를 사용하지 않습니다."
+                android:textColor="#FF292927"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_shape_4"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/drawable_image_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="이름(ID)"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/drawable_shape_5"
+                android:clipToPadding="false"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="8dp"
+                android:paddingTop="8dp"
+                android:paddingRight="8dp"
+                android:paddingBottom="8dp">
+
+                <EditText
+                    android:id="@+id/editSignupName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_shape_6"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/drawable_image_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="성별"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/drawable_shape_7"
+                    android:gravity="left|top"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_sex_man"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_shape_8"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_sex_man"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="남"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_sex_woman"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_shape_9"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="12dp"
+                        android:paddingBottom="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_sex_woman"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="여"
+                            android:textColor="#FF292927"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="213dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:gravity="left|center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="68dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_shape_10"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/drawable_image_2" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="나이"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/drawable_shape_7"
+                    android:gravity="left|top"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingTop="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp">
+
+                    <EditText
+                        android:id="@+id/editSignupAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="numberSigned"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="72dp"
+                    android:layout_height="10dp"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/drawable_shape_11"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/drawable_image_5" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:layout_marginLeft="12dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="질환"
+                            android:textColor="#FF292927"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/drawable_shape_12"
+                    android:gravity="left|top"
+                    android:orientation="horizontal"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_disease_1"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_shape_13"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_disease_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="피부"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_disease_2"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_shape_14"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_disease_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="두피"
+                            android:textColor="#FF292927"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_disease_3"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_layer"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_disease_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="통증"
+                            android:textColor="#FF292927"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_signup_disease_4"
+                        android:layout_width="0dp"
+                        android:layout_height="32dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_shape_15"
+                        android:clipToPadding="false"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="12dp"
+                        android:paddingRight="12dp"
+                        android:paddingTop="4dp">
+
+                        <TextView
+                            android:id="@+id/text_signup_disease_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="21dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="뇌"
+                            android:textColor="#FF292927"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="328dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="left|top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/drawable_shape_16"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/drawable_image_6" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="12dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="정도"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="243dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/drawable_shape_17">
+
+                    <FrameLayout
+                        android:layout_width="243dp"
+                        android:layout_height="23dp"
+                        android:layout_marginTop="22dp"
+                        android:layout_gravity="top|left"
+                        android:background="@drawable/drawable_shape_18">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:layout_marginLeft="221dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_gravity="top|left"
+                            android:gravity="left|top"
+                            android:includeFontPadding="false"
+                            android:lineHeight="18dp"
+                            android:text="나쁨\n"
+                            android:textColor="#FF465A54"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_gravity="top|left"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="좋음"
+                            android:textColor="#FF465A54"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_1"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_1"
+                            android:layout_width="19dp"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="1"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_2"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="26dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="7dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="2"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_3"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="51dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="3"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_4"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="76dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="18.95dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="1.05dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="4\n"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_5"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="101dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_5"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="5"
+                            android:textColor="#FFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_6"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="126dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_6"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="6"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_7"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="151dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_7"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="7"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_8"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="176dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_8"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="8"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_9"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="201dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_9"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="9"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/btn_level_10"
+                        android:layout_width="19dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="224dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_gravity="top|left"
+                        android:background="#465A54">
+
+                        <TextView
+                            android:id="@+id/text_level_10"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginBottom="0dp"
+                            android:gravity="left|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="10"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12dp" />
+                    </FrameLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="305dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="4dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="치료 효과의 기준으로 사용됩니다."
+                android:textColor="#FF292927"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:id="@+id/btn_signup_create_account"
+                android:layout_width="305dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/drawable_shape_39"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="Create Account"
+                    android:textColor="#FF292927"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="12dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/drawable_image_7" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+</layout>

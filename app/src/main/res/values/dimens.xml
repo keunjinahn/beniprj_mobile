@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- text -->
+    <dimen name="activity_title_txt_size">20sp</dimen>
+    <dimen name="section_title_txt_size">20sp</dimen>
+    <dimen name="section_child_txt_size">10sp</dimen>
+
+    <dimen name="dialog_txt_size_big">20sp</dimen>
+    <dimen name="dialog_txt_size_medium">16sp</dimen>
+    <dimen name="dialog_txt_size_small">14sp</dimen>
+    <dimen name="dialog_txt_size_smaller">12sp</dimen>
+
+
+    <dimen name="activity_txt_size_big">20sp</dimen>
+    <dimen name="activity_txt_size_large">18sp</dimen>
+    <dimen name="activity_txt_size_medium">16sp</dimen>
+    <dimen name="activity_txt_size_small">14sp</dimen>
+    <dimen name="activity_txt_size_smaller">12sp</dimen>
+
+    <dimen name="dialog_btn_txt_size">16sp</dimen>
+
+    <dimen name="dialog_top_radius">20dp</dimen>
+    <dimen name="dialog_bottom_radius">20dp</dimen>
+
+    <dimen name="dialog_content_padding">14dp</dimen>
+
+    <dimen name="dialog_bottom_btn_radius">4dp</dimen>
+    <dimen name="dialog_bottom_btn_margin">14dp</dimen>
+    <dimen name="dialog_box_left_margin">24dp</dimen>
+    <dimen name="dialog_box_right_margin">24dp</dimen>
+
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="circle_in_out_size">38dp</dimen>
+    <dimen name="arrow_size">28dp</dimen>
+    <dimen name="choose_box_size">140dp</dimen>
+    <dimen name="activity_head_height_size">82dp</dimen>
+    <dimen name="activity_head_title_size">24sp</dimen>
+    <dimen name="activity_sub_title_size">18sp</dimen>
+    <dimen name="input_margin_top">14dp</dimen>
+    <dimen name="input_subtitle_margin_top">8dp</dimen>
+    <dimen name="input_arrow_size">20dp</dimen>
+    <dimen name="input_text_width_size">200dp</dimen>
+    <dimen name="activity_btn_top_margin">24dp</dimen>
+    <dimen name="activity_btn_size">52dp</dimen>
+    <dimen name="activity_btn_text_size">18sp</dimen>
+    <dimen name="input_height_size">52dp</dimen>
+    <dimen name="input_padding">14dp</dimen>
+    <dimen name="input_search_size">18dp</dimen>
+    <dimen name="search_list_size">70dp</dimen>
+    <dimen name="input_car_text_size">32sp</dimen>
+    <dimen name="start_size">28dp</dimen>
+    <dimen name="dialog_one_item_list">50dp</dimen>
+    <dimen name="dialog_bottom_none_btn">18dp</dimen>
+    <dimen name="list_item_spacing">16dp</dimen>
+    <dimen name="list_item_spacing_half">8dp</dimen>
+    <dimen name="dialog_txt_size_large">18sp</dimen>
+    <dimen name="btn_ble_text_size">32sp</dimen>
+
+    <dimen name="dialog_content_padding_large">24dp</dimen>
+
+</resources>

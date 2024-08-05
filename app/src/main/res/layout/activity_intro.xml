@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<!--    <data>-->
+<!--        <variable name="update" type="kr.ac.beni.beniprj.model.Update"/>-->
+<!--    </data>-->
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".ui.IntroActivity">
+        <ImageView
+            android:id="@+id/main_logo_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="82dp"
+            android:src="@drawable/main_logo" />
+
+        <TextView
+            android:id="@+id/main_logo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_logo_img"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="호서대학교\n(HVFG)"
+            android:textSize="48sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="86dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/main_bottom_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="42dp"
+                android:textColor="@color/white"
+                android:text="호서대학교"
+                android:textSize="@dimen/activity_txt_size_large" />
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/version"
+            android:text="0.2.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/activity_txt_size_small" />
+        <!-- android:text="@{update == null ? @string/intro_version : @string/intro_version(update.version)}"-->
+        <LinearLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:indeterminateTint="@color/green"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/text_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_btn_size"
+        android:layout_marginTop="@dimen/activity_btn_top_margin"
+        android:background="@drawable/btn_default"
+        android:gravity="center"
+        android:text="@string/page1_fragment_title"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/activity_btn_text_size"
+        android:textStyle="bold"
+        android:visibility="visible" />
+</layout>

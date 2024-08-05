@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_info"-->
+<!--        android:visible="false"-->
+<!--        android:title="@string/basic_info" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_run"-->
+<!--        android:visible="false"-->
+<!--        android:icon="@drawable/ic_main_solid"-->
+<!--        android:title="@string/run" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/navigation_setting"-->
+<!--        android:visible="false"-->
+<!--        android:icon="@drawable/ic_gear_solid"-->
+<!--        android:title="@string/setting" />-->
+    <item
+        android:id="@+id/navigation_signup"
+        android:icon="@drawable/ic_main_solid"
+        android:title="@string/signup_fragment_title"
+        />
+    <item
+        android:id="@+id/navigation_page1"
+        android:icon="@drawable/ic_main_solid"
+        android:title="@string/page1_fragment_title"
+        />
+    <item
+        android:id="@+id/navigation_page2"
+        android:icon="@drawable/ic_gear_solid"
+        android:title="@string/page2_fragment_title" />
+</menu>

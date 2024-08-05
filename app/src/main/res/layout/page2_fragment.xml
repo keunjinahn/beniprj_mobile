@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:layout_marginEnd="@dimen/activity_horizontal_margin"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/activity_head_height_size"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:text="@string/basic_info"
+                android:textColor="@color/black"
+                android:textSize="@dimen/activity_head_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text_ok"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_btn_size"
+                android:layout_marginTop="@dimen/activity_btn_top_margin"
+                android:background="@drawable/btn_default"
+                android:gravity="center"
+                android:text="@string/page2_fragment_title"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/activity_btn_text_size"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:indeterminateTint="@color/green"
+                android:indeterminateDrawable="@drawable/progress"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+</layout>

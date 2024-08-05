@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginEnd="@dimen/activity_horizontal_margin"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/activity_head_height_size"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/setting"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_head_title_size"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/alarm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_sub_title_size"
+                    android:textStyle="bold" />
+                <!--<RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_size"
+                    android:background="@drawable/box_setting"
+                    android:layout_marginTop="@dimen/input_subtitle_margin_top"
+                    android:padding="@dimen/input_padding"
+                    >
+                    <TextView
+                        android:layout_width="@dimen/input_text_width_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="공지 알림"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_txt_size_medium"
+                        android:textStyle="normal" />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        />
+                </RelativeLayout>-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_size"
+                    android:background="@drawable/box_setting"
+                    android:layout_marginTop="@dimen/input_subtitle_margin_top"
+                    android:padding="@dimen/input_padding">
+                    <TextView
+                        android:layout_width="@dimen/input_text_width_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="알림"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_txt_size_medium"
+                        android:textStyle="normal" />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/setting_switch_alarm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:enabled="true" />
+                </RelativeLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/privacy"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_sub_title_size"
+                    android:layout_marginTop="@dimen/input_margin_top"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:id="@+id/setting_privacy"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_size"
+                    android:background="@drawable/box_setting"
+                    android:layout_marginTop="@dimen/input_subtitle_margin_top"
+                    android:padding="@dimen/input_padding"
+                    >
+                    <TextView
+                        android:layout_width="@dimen/input_text_width_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/setting_privacy_confirm"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_txt_size_medium"
+                        android:textStyle="normal" />
+                    <ImageView
+                        android:layout_width="@dimen/input_arrow_size"
+                        android:layout_height="@dimen/input_arrow_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right_solid"
+                        app:tint="@color/disable_gray"
+                        android:contentDescription="@string/cd_arrow" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_size"
+                    android:background="@drawable/box_setting"
+                    android:visibility="gone"
+                    android:layout_marginTop="@dimen/input_subtitle_margin_top"
+                    android:padding="@dimen/input_padding">
+                    <TextView
+                        android:layout_width="@dimen/input_text_width_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="권한 동의"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_txt_size_medium"
+                        android:textStyle="normal" />
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/setting_switch_permission"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:enabled="true" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/version"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/activity_sub_title_size"
+                    android:layout_marginTop="@dimen/input_margin_top"
+                    android:textStyle="bold" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/input_height_size"
+                    android:background="@drawable/box_setting"
+                    android:layout_marginTop="@dimen/input_subtitle_margin_top"
+                    android:padding="@dimen/input_padding"
+                    >
+                    <TextView
+                        android:id="@+id/setting_version"
+                        android:layout_width="@dimen/input_text_width_size"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/activity_txt_size_medium"
+                        android:textStyle="normal" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout
+            android:id="@+id/progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:indeterminateTint="@color/green"
+                    android:indeterminateDrawable="@drawable/progress"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

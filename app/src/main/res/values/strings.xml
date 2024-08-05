@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">호서대학교\n(HVFG)</string>
+    <string name="confirm">확인</string>
+    <string name="finish">종료</string>
+    <string name="app_channel_id_location">HVFG_LOCATION</string>
+    <string name="app_channel_id_fcm">HVFG_MESSAGE</string>
+    <string name="dialog_update_content">더 나은 서비스를 위하여 앱 <font color='#FF654E'><b>업데이트</b></font>를 하시기 바랍니다.</string>
+    <string name="dialog_update_title">최신 버전 업데이트</string>
+    <string name="dialog_update_btn">업데이트 하기</string>
+    <string name="cancel">취소</string>
+    <string name="dialog_privacy_title">개인정보처리방침</string>
+    <string name="dialog_privacy_agreement">개인정보 수집 및 제공 동의</string>
+    <string name="all_see"><u>전체보기</u></string>
+    <string name="dialog_permission_title">권한 허용 요청</string>
+    <string name="dialog_permission_agreement">동의 합니다</string>
+    <string name="dialog_permission_content">앱 이용을 위해 권한의 이용이 필요합니다. 수집 된 데이터는<u>%s</u>로 전송 후 연구 데이터로 활용됩니다.\n <font color='#00629B'>* 마이크 권한 - 음성 대화 녹음 \n * 위치 권한 - 사용자 위치 수집</font></string>
+    <string name="dialog_permission_content_bluetooth">앱 이용을 위해 권한의 이용이 필요합니다. 수집 된 데이터는<u>%s</u>로 전송 후 연구 데이터로 활용됩니다.\n <font color='#00629B'>* 마이크 권한 - 음성 대화 녹음 \n * 위치 권한 - 사용자 위치 수집</font></string>
+    <string name="permission_denied">위치정보 및 마이크 권한에 허용 하셨습니다. 설정을 통해 권한을 허용해주세요.</string>
+    <string name="intro_version">버전 %s</string>
+    <string name="privacy_no_check">동의 하셔야 진행하실 수 있습니다.</string>
+    <string name="title_activity_run">RunActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="setting">설정</string>
+    <string name="run">작업</string>
+    <string name="basic_info">정보</string>
+    <string name="cd_arrow">화살표</string>
+    <string name="activity_join_title">메뉴 화면</string>
+    <string name="btn_start_in">보이스피싱 예방 서비스</string>
+    <string name="yes">네</string>
+    <string name="no">아니오</string>
+    <string name="zero">0</string>
+    <string name="ga">가</string>
+    <string name="_12">12</string>
+    <string name="_01">01</string>
+    <string name="noti_foregorund_msg">호서대학교 보이스피싱 가드(HVFG)가 동작 중입니다.</string>
+    <string name="alarm">알림</string>
+    <string name="setting_privacy_confirm">개인정보처리방침 확인</string>
+    <string name="version">버전</string>
+    <string name="privacy">개인정보처리방침</string>
+    <string name="toast_dont_rooting">루팅 사용자를 제한하고 있습니다.</string>
+    <string name="toast_market_check">정식 마켓 버전만 사용하실 수 있습니다</string>
+    <string name="work_end">작업종료</string>
+    <string name="search_place_title">제목1</string>
+    <string name="search_place_sub_title">제목2</string>
+    <string name="search_company_accent"><u>질문1?</u></string>
+    <string name="search_car_accent"><u>질문2?</u></string>
+    <string name="zero4">0000</string>
+    <string name="dialog_waste_list_content"><font color='#00629B'><b>작업</b></font>을 선택해주세요.</string>
+    <string name="dialog_waste_list_title">작업 선택</string>
+    <string name="btn_info_update">정보 수정</string>
+    <string name="toast_work_end">작업이 종료되었습니다.</string>
+    <string name="refresh">재시도</string>
+    <string name="zero6">000000</string>
+    <string name="status_top_default">채팅 화면</string>
+    <string name="close">닫기</string>
+    <string name="cahnnelName_ble">HVFG_BLUETOOTH</string>
+    <string name="or">또는</string>
+    <string name="fourteen_over">본인은 만14세 이상입니다.</string>
+
+    <string name="record_btn_start">녹음 시작</string>
+    <string name="record_btn_stop">녹음 중지</string>
+    <string name="record_result_hint">녹음 인식 영역</string>
+    <string name="record_btn_send">서버 전송</string>
+    <string name="api_result_hint">서버 응답 영역</string>
+    <string name="page1_fragment_title">페이지1</string>
+    <string name="page2_fragment_title">페이지2</string>
+    <string name="signup_fragment_title">signup</string>
+    <string name="signup_input_yourname">Your Name1</string>
+
+
+</resources>

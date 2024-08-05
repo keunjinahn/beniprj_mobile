@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:id="@+id/user_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|start"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/user_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:background="@drawable/new_chat_box1"
+            android:textSize="18sp"
+            android:text="테스트 내용입니다. 여러줄이 된다면 이렇게 보이게 될 것입니다. 참고하세요!"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/system_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical|end"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/system_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/new_chat_box2"
+            android:gravity="start"
+            android:textSize="18sp"
+            android:text="테스트 내용입니다. 여러줄이 된다면 이렇게 보이게 될 것입니다. 참고하세요!"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+</RelativeLayout>
