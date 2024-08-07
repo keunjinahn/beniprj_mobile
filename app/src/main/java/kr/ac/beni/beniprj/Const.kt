@@ -9,8 +9,8 @@ class Const {
         const val DEBUG_MODE                    = false
 
         //const val BASE_URL                      = "https://abrain.hoseo.ac.kr"
-        const val BASE_URL                      = "http://localhost:5000"
-
+        const val BASE_URL                      = "http://192.168.5.234:8081"
+        const val BASE_URL2                      = "http://192.168.5.234:8081"
         const val PRIVACY_URL                   = "http://www.hoseo.ac.kr/Home/Contents.mbz?action=MAPP_1708310223"
 
         const val FOREGROUND_ID                 = 4857
@@ -21,7 +21,16 @@ class Const {
         SetSendChat,
         GetBeniPrj,
         SetNewUserInfo,
+        GetMedicalList
+    }
+    enum class UserModeType(s: String) {
+        UseModeTypeSkin("M01"),
+        UseModeTypeScalp("M02")
     }
 }
 
 data class UserInfo(var name: String, var age: Int, var sex:Int, var diseaseNum:Int, var diseaseLevel:Int)
+data class SendParamInfo(
+    var param1:String?,
+    var param2:String?
+)

@@ -32,4 +32,22 @@ class Requests {
         @SerializedName("disease_level") val diseaseLevel: Int
     )
 
+    ///////////////////////////////////////////////////////////
+    data class GetMedicalHist(
+        @SerializedName("fk_user_id") val fkUserId: Int
+    )
+
+    data class SetMedicalHist(
+        @SerializedName("id") val id: Int,
+        @SerializedName("medicalMainName") val medicalMainName: String,
+        @SerializedName("medicalMainCode") val medicalMainCode: String,
+        @SerializedName("medicalSubName") val medicalSubName: String,
+        @SerializedName("medicalSubCode") val medicalSubCode: String,
+        @SerializedName("operationDuration") val operationDuration: String,
+        @SerializedName("operationHz") val operationHz: String,
+        @SerializedName("operationRate") val operationRate: String,
+        @SerializedName("medicalDate") val medicalDate: String,
+        @SerializedName("fk_user_id") val fkUserId: Int,
+    )
+
 }

@@ -13,7 +13,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="759dp"
-            android:background="@drawable/drawable_shape"
+            android:background="@drawable/signup_drawable_shape"
             android:gravity="left|top"
             android:orientation="vertical"
             android:paddingBottom="32dp"
@@ -24,7 +24,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/drawable_shape_1"
+                android:background="@drawable/signup_drawable_shape_1"
                 android:gravity="left|top"
                 android:orientation="horizontal"
                 android:paddingBottom="8dp"
@@ -36,7 +36,7 @@
                     android:layout_width="0dp"
                     android:layout_height="32dp"
                     android:layout_weight="1"
-                    android:background="@drawable/drawable_shape_2"
+                    android:background="@drawable/signup_drawable_shape_2"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal"
@@ -62,7 +62,7 @@
                     android:layout_height="32dp"
                     android:layout_marginLeft="4dp"
                     android:layout_weight="1"
-                    android:background="@drawable/drawable_shape_3"
+                    android:background="@drawable/signup_drawable_shape_3"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal"
@@ -115,7 +115,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/drawable_image" />
+                    android:src="@drawable/signup_drawable_image" />
             </LinearLayout>
 
             <TextView
@@ -140,7 +140,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/drawable_shape_4"
+                    android:background="@drawable/signup_drawable_shape_4"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -149,7 +149,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:scaleType="centerInside"
-                        android:src="@drawable/drawable_image_1" />
+                        android:src="@drawable/signup_drawable_image_1" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -169,7 +169,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
                 android:layout_marginTop="5dp"
-                android:background="@drawable/drawable_shape_5"
+                android:background="@drawable/signup_drawable_shape_5"
                 android:clipToPadding="false"
                 android:gravity="left|center_vertical"
                 android:orientation="horizontal"
@@ -197,7 +197,7 @@
                 <LinearLayout
                     android:layout_width="67dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/drawable_shape_6"
+                    android:background="@drawable/signup_drawable_shape_6"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -208,7 +208,7 @@
                         android:layout_height="24dp"
                         android:layout_weight="1"
                         android:scaleType="centerInside"
-                        android:src="@drawable/drawable_image_2" />
+                        android:src="@drawable/signup_drawable_image_2" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -227,7 +227,7 @@
                     android:layout_width="132dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:background="@drawable/drawable_shape_7"
+                    android:background="@drawable/signup_drawable_shape_7"
                     android:gravity="left|top"
                     android:orientation="horizontal"
                     android:paddingBottom="8dp"
@@ -240,7 +240,7 @@
                         android:layout_width="0dp"
                         android:layout_height="32dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_shape_8"
+                        android:background="@drawable/signup_drawable_shape_8"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -268,7 +268,7 @@
                         android:layout_height="32dp"
                         android:layout_marginLeft="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_shape_9"
+                        android:background="@drawable/signup_drawable_shape_9"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -302,7 +302,7 @@
                 <LinearLayout
                     android:layout_width="68dp"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/drawable_shape_10"
+                    android:background="@drawable/signup_drawable_shape_10"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -311,7 +311,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:scaleType="centerInside"
-                        android:src="@drawable/drawable_image_2" />
+                        android:src="@drawable/signup_drawable_image_2" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -331,7 +331,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16dp"
-                    android:background="@drawable/drawable_shape_7"
+                    android:background="@drawable/signup_drawable_shape_7"
                     android:gravity="left|top"
                     android:orientation="horizontal"
                     android:paddingLeft="8dp"
@@ -367,7 +367,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/drawable_shape_11"
+                        android:background="@drawable/signup_drawable_shape_11"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal">
@@ -376,7 +376,7 @@
                             android:layout_width="24dp"
                             android:layout_height="24dp"
                             android:scaleType="centerInside"
-                            android:src="@drawable/drawable_image_5" />
+                            android:src="@drawable/signup_drawable_image_5" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -396,7 +396,7 @@
                     android:layout_width="240dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="16dp"
-                    android:background="@drawable/drawable_shape_12"
+                    android:background="@drawable/signup_drawable_shape_12"
                     android:gravity="left|top"
                     android:orientation="horizontal"
                     android:paddingBottom="8dp"
@@ -409,7 +409,7 @@
                         android:layout_width="0dp"
                         android:layout_height="32dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_shape_13"
+                        android:background="@drawable/signup_drawable_shape_13"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -437,7 +437,7 @@
                         android:layout_height="32dp"
                         android:layout_marginLeft="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_shape_14"
+                        android:background="@drawable/signup_drawable_shape_14"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -465,7 +465,7 @@
                         android:layout_height="32dp"
                         android:layout_marginLeft="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_layer"
+                        android:background="@drawable/signup_drawable_layer"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -493,7 +493,7 @@
                         android:layout_height="32dp"
                         android:layout_marginLeft="4dp"
                         android:layout_weight="1"
-                        android:background="@drawable/drawable_shape_15"
+                        android:background="@drawable/signup_drawable_shape_15"
                         android:clipToPadding="false"
                         android:gravity="center"
                         android:orientation="horizontal"
@@ -527,7 +527,7 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@drawable/drawable_shape_16"
+                    android:background="@drawable/signup_drawable_shape_16"
                     android:clipToPadding="false"
                     android:gravity="center"
                     android:orientation="horizontal">
@@ -536,7 +536,7 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:scaleType="centerInside"
-                        android:src="@drawable/drawable_image_6" />
+                        android:src="@drawable/signup_drawable_image_6" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -555,14 +555,14 @@
                     android:layout_width="243dp"
                     android:layout_height="22dp"
                     android:layout_marginLeft="16dp"
-                    android:background="@drawable/drawable_shape_17">
+                    android:background="@drawable/signup_drawable_shape_17">
 
                     <FrameLayout
                         android:layout_width="243dp"
                         android:layout_height="23dp"
                         android:layout_marginTop="22dp"
                         android:layout_gravity="top|left"
-                        android:background="@drawable/drawable_shape_18">
+                        android:background="@drawable/signup_drawable_shape_18">
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -579,16 +579,16 @@
 
                         <TextView
                             android:layout_width="wrap_content"
-                            android:layout_height="18dp"
-                            android:layout_marginTop="1dp"
+                            android:layout_height="23dp"
                             android:layout_gravity="top|left"
+                            android:layout_marginTop="1dp"
                             android:gravity="left|center_vertical"
                             android:includeFontPadding="false"
                             android:maxLines="1"
                             android:singleLine="true"
                             android:text="좋음"
-                            android:textColor="#FF465A54"
-                            android:textSize="12dp" />
+                            android:textColor="#000000"
+                            android:textSize="10dp" />
                     </FrameLayout>
 
                     <FrameLayout
@@ -872,7 +872,7 @@
                 android:layout_width="305dp"
                 android:layout_height="56dp"
                 android:layout_marginTop="24dp"
-                android:background="@drawable/drawable_shape_39"
+                android:background="@drawable/signup_drawable_shape_39"
                 android:clipToPadding="false"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -897,7 +897,7 @@
                     android:layout_height="24dp"
                     android:layout_marginLeft="12dp"
                     android:scaleType="centerInside"
-                    android:src="@drawable/drawable_image_7" />
+                    android:src="@drawable/signup_drawable_image_7" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

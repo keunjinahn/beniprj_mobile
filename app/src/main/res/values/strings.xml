@@ -68,6 +68,9 @@
     <string name="page2_fragment_title">페이지2</string>
     <string name="signup_fragment_title">signup</string>
     <string name="signup_input_yourname">Your Name1</string>
-
+<!--    /// 사용 모드-->
+    <string name="use_mode_fragment_title">사용 모드</string>
+    <string name="mode_run_fragment_title">모드 동작</string>
+    <string name="running_fragment_title">동작중</string>
 
 </resources>

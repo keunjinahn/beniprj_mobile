@@ -51,11 +51,11 @@ class RunActivity : AppCompatActivity(){
         navView = binding.navView
         val navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_run) as NavHostFragment
         val navController = navHostFragment.navController
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.navigation_signup,R.id.navigation_page1, R.id.navigation_page2))
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.navigation_running,R.id.navigation_mode_run,R.id.navigation_use_mode))
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         supportActionBar?.hide()
-        navView.selectedItemId = R.id.navigation_signup
+        navView.selectedItemId = R.id.navigation_running
 
 
         val intent = Intent(this, BackgroundService::class.java)
@@ -72,7 +72,7 @@ class RunActivity : AppCompatActivity(){
     }
 
     fun setRunFragmentWorkEnd(){
-        navView.selectedItemId = R.id.navigation_signup
+//        navView.selectedItemId = R.id.navigation_mode_run
     }
 
     override fun onDestroy() {

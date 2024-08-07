@@ -53,8 +53,7 @@ class SignupFragment : Fragment(){
         mVFViewModel.getSetNewUserInfo().observe(viewLifecycleOwner, EventObserver{
             if(it.isSuccess()) {
                 val newUserInfoResult: NewUserInfoResult? = it.getResponse()?.body()
-                Toast.makeText(requireActivity(), "결과 : ${newUserInfoResult.toString()}", Toast.LENGTH_SHORT).show()
-
+                CommonUtils.commonLog("결과 : ${newUserInfoResult.toString()}")
             } else {
                 observeResponseError(it, Const.Api.SetNewUserInfo)
             }
@@ -459,8 +458,8 @@ class SignupFragment : Fragment(){
     }
     private fun toggleSignupSex(id:View,onOff:Boolean){
         when (id) {
-            _binding.btnSignupSexMan ->  _binding.btnSignupSexMan.setBackgroundResource(if(onOff) R.drawable.drawable_shape_8 else R.drawable.drawable_shape_9)
-            _binding.btnSignupSexWoman ->  _binding.btnSignupSexWoman.setBackgroundResource(if(onOff) R.drawable.drawable_shape_8 else R.drawable.drawable_shape_9)
+            _binding.btnSignupSexMan ->  _binding.btnSignupSexMan.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_8 else R.drawable.signup_drawable_shape_9)
+            _binding.btnSignupSexWoman ->  _binding.btnSignupSexWoman.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_8 else R.drawable.signup_drawable_shape_9)
             _binding.textSignupSexMan ->  _binding.textSignupSexMan.setTextColor(resources.getColor(if(onOff) R.color.signup_toggle_true_color else R.color.signup_toggle_false_color))
             _binding.textSignupSexWoman->  _binding.textSignupSexWoman.setTextColor(resources.getColor(if(onOff) R.color.signup_toggle_true_color else R.color.signup_toggle_false_color))
         }
@@ -468,10 +467,10 @@ class SignupFragment : Fragment(){
     }
     private fun toggleSignupDisease(id:View,onOff:Boolean){
         when (id) {
-            _binding.btnSignupDisease1 ->  _binding.btnSignupDisease1.setBackgroundResource(if(onOff) R.drawable.drawable_shape_13 else R.drawable.drawable_shape_14)
-            _binding.btnSignupDisease2 ->  _binding.btnSignupDisease2.setBackgroundResource(if(onOff) R.drawable.drawable_shape_13 else R.drawable.drawable_shape_14)
-            _binding.btnSignupDisease3 ->  _binding.btnSignupDisease3.setBackgroundResource(if(onOff) R.drawable.drawable_shape_13 else R.drawable.drawable_shape_14)
-            _binding.btnSignupDisease4 ->  _binding.btnSignupDisease4.setBackgroundResource(if(onOff) R.drawable.drawable_shape_13 else R.drawable.drawable_shape_14)
+            _binding.btnSignupDisease1 ->  _binding.btnSignupDisease1.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_13 else R.drawable.signup_drawable_shape_14)
+            _binding.btnSignupDisease2 ->  _binding.btnSignupDisease2.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_13 else R.drawable.signup_drawable_shape_14)
+            _binding.btnSignupDisease3 ->  _binding.btnSignupDisease3.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_13 else R.drawable.signup_drawable_shape_14)
+            _binding.btnSignupDisease4 ->  _binding.btnSignupDisease4.setBackgroundResource(if(onOff) R.drawable.signup_drawable_shape_13 else R.drawable.signup_drawable_shape_14)
             _binding.textSignupDisease1 ->  _binding.textSignupDisease1.setTextColor(resources.getColor(if(onOff) R.color.signup_toggle_true_color else R.color.signup_toggle_false_color))
             _binding.textSignupDisease2 ->  _binding.textSignupDisease2.setTextColor(resources.getColor(if(onOff) R.color.signup_toggle_true_color else R.color.signup_toggle_false_color))
             _binding.textSignupDisease3 ->  _binding.textSignupDisease3.setTextColor(resources.getColor(if(onOff) R.color.signup_toggle_true_color else R.color.signup_toggle_false_color))

@@ -6,8 +6,11 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
+import kr.ac.beni.beniprj.Const
+import kr.ac.beni.beniprj.SendParamInfo
 import kr.ac.beni.beniprj.model.GetBeniPrjResult
 import kr.ac.beni.beniprj.model.GetBeniPrjRoomResult
+import kr.ac.beni.beniprj.model.GetMedicalHistResult
 import kr.ac.beni.beniprj.model.NewChatResult
 import kr.ac.beni.beniprj.model.NewUserInfoResult
 import kr.ac.beni.beniprj.model.SendChatResult
@@ -23,7 +26,6 @@ class VFViewModel constructor(application: Application)
     private var setSendChat: MutableLiveData<Event<Requests.SetSendChat>> = MutableLiveData()
     private var getBeniPrj: MutableLiveData<Event<Requests.GetBeniPrj>> = MutableLiveData()
     private var getBeniPrjRoom: MutableLiveData<Event<Requests.GetBeniPrjRoom>> = MutableLiveData()
-
     //
     private var setNewChatLiveData: LiveData<Event<ApiResponse<NewChatResult>>> = Transformations.switchMap(setNewChat) { VFRepository.setNewChat(it.peekContent()) }
     fun callSetNewChat(request: Requests.SetNewChat){ setNewChat.value = Event(request) }
@@ -42,9 +44,30 @@ class VFViewModel constructor(application: Application)
     fun getGetBeniPrjRoom(): LiveData<Event<ApiResponse<GetBeniPrjRoomResult>>>{ return getBeniPrjRoomLiveData }
 
 
-    /////////////////////////////////////////////////
+    ///사용자 등록
     private var setNewUserInfo: MutableLiveData<Event<Requests.SetNewUserInfo>> = MutableLiveData()
     private var setNewUserInfoLiveData: LiveData<Event<ApiResponse<NewUserInfoResult>>> = Transformations.switchMap(setNewUserInfo) { VFRepository.setNewUserInfo(it.peekContent()) }
     fun callSetNewUserInfo(request: Requests.SetNewUserInfo){ setNewUserInfo.value = Event(request) }
-    fun getSetNewUserInfo(): LiveData<Event<ApiResponse<NewUserInfoResult>>>{ return setNewUserInfoLiveData}
+    fun getSetNewUserInfo(): LiveData<Event<ApiResponse<NewUserInfoResult>>> {return setNewUserInfoLiveData}
+
+
+    ///사용자 등록
+    private var getMedicalHist: MutableLiveData<Event<Requests.GetMedicalHist>> = MutableLiveData()
+    private var getMedicalHistLiveData: LiveData<Event<ApiResponse<GetMedicalHistResult>>> = Transformations.switchMap(getMedicalHist) { VFRepository.getMedicalHist(it.peekContent()) }
+    fun callGetMedicalHist(request: Requests.GetMedicalHist){ getMedicalHist.value = Event(request) }
+    fun getGetMedicalHist(): LiveData<Event<ApiResponse<GetMedicalHistResult>>> {return getMedicalHistLiveData}
+
+    //프래그먼트 간 데이터 전달
+//    val sendParamInfo: LiveData<SendParamInfo> get() = _sendParamInfo
+//    fun setSendParamInfo(value: SendParamInfo) {
+//        _sendParamInfo.value = value
+//    }
+
+    private var _useModeType: MutableLiveData<CharSequence> = MutableLiveData()
+
+    fun getUseModeType(): MutableLiveData<CharSequence> = _useModeType
+
+    fun updateUseModeType(input: CharSequence) {
+        _useModeType.value = input
+    }
 }

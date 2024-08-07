@@ -3,41 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_signup">
+    app:startDestination="@+id/navigation_running">
 
     <fragment
         android:id="@+id/navigation_signup"
         android:name="kr.ac.beni.beniprj.ui.users.SignupFragment"
         android:label="@string/title_home"
         tools:layout="@layout/signup_fragment" />
-
     <fragment
-        android:id="@+id/navigation_page1"
-        android:name="kr.ac.beni.beniprj.ui.page.Page1Fragment"
+        android:id="@+id/navigation_use_mode"
+        android:name="kr.ac.beni.beniprj.ui.run.UseModeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/page1_fragment" />
-
+        tools:layout="@layout/use_mode_fragment" />
     <fragment
-        android:id="@+id/navigation_page2"
-        android:name="kr.ac.beni.beniprj.ui.page.Page2Fragment"
+        android:id="@+id/navigation_mode_run"
+        android:name="kr.ac.beni.beniprj.ui.run.ModeRunFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/page2_fragment" />
-
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_info"-->
-<!--        android:name="kr.ac.beni.beniprj.ui.info.InfoFragment"-->
-<!--        android:label="@string/title_home"-->
-<!--        tools:layout="@layout/fragment_info" />-->
-
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_run"-->
-<!--        android:name="kr.ac.beni.beniprj.ui.run.RunFragment"-->
-<!--        android:label="@string/title_dashboard"-->
-<!--        tools:layout="@layout/fragment_run" />-->
-
-<!--    <fragment-->
-<!--        android:id="@+id/navigation_setting"-->
-<!--        android:name="kr.ac.beni.beniprj.ui.setting.SettingFragment"-->
-<!--        android:label="@string/title_notifications"-->
-<!--        tools:layout="@layout/fragment_setting" />-->
+        tools:layout="@layout/mode_run_fragment" />
+    <fragment
+        android:id="@+id/navigation_running"
+        android:name="kr.ac.beni.beniprj.ui.run.RunningFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/running_fragment" />
 </navigation>

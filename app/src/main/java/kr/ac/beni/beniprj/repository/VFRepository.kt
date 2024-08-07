@@ -33,6 +33,41 @@ object VFRepository {
         return setNewUserInfo
     }
 
+    private val setMedicalHist= MutableLiveData<Event<ApiResponse<SetMedicalHistResult>>>()
+    fun setMedicalHist(request: Requests.SetMedicalHist): LiveData<Event<ApiResponse<SetMedicalHistResult>>> {
+        call?.setMedicalHist(request)?.enqueue(object : Callback<SetMedicalHistResult>{
+            override fun onResponse(call: Call<SetMedicalHistResult>, response: Response<SetMedicalHistResult>) {
+                val apiResponse = ApiResponse(response)
+                setMedicalHist.postValue(Event(apiResponse))
+            }
+
+            override fun onFailure(call: Call<SetMedicalHistResult>, t: Throwable) {
+                val apiResponse = ApiResponse<SetMedicalHistResult>(t)
+                setMedicalHist.postValue(Event(apiResponse))
+            }
+
+        })
+        return setMedicalHist
+    }
+
+    private val getMedicalHist= MutableLiveData<Event<ApiResponse<GetMedicalHistResult>>>()
+    fun getMedicalHist(request: Requests.GetMedicalHist): LiveData<Event<ApiResponse<GetMedicalHistResult>>> {
+        call?.getMedicalHist(request)?.enqueue(object : Callback<GetMedicalHistResult>{
+            override fun onResponse(call: Call<GetMedicalHistResult>, response: Response<GetMedicalHistResult>) {
+                val apiResponse = ApiResponse(response)
+                getMedicalHist.postValue(Event(apiResponse))
+            }
+
+            override fun onFailure(call: Call<GetMedicalHistResult>, t: Throwable) {
+                val apiResponse = ApiResponse<GetMedicalHistResult>(t)
+                getMedicalHist.postValue(Event(apiResponse))
+            }
+
+        })
+        return getMedicalHist
+    }
+
+    ////////////////////////////////////////////////
     private val setNewChat = MutableLiveData<Event<ApiResponse<NewChatResult>>>()
     fun setNewChat(request: Requests.SetNewChat): LiveData<Event<ApiResponse<NewChatResult>>> {
         call?.setNewChat(request)?.enqueue(object : Callback<NewChatResult>{

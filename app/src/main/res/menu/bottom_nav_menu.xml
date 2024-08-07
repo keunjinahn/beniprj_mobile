@@ -18,18 +18,25 @@
 <!--        android:visible="false"-->
 <!--        android:icon="@drawable/ic_gear_solid"-->
 <!--        android:title="@string/setting" />-->
+
+    <item
+        android:id="@+id/navigation_use_mode"
+        android:icon="@drawable/ic_main_solid"
+        android:title="@string/use_mode_fragment_title"
+        />
+    <item
+        android:id="@+id/navigation_mode_run"
+        android:icon="@drawable/ic_main_solid"
+        android:title="@string/mode_run_fragment_title"
+        />
+    <item
+        android:id="@+id/navigation_running"
+        android:icon="@drawable/ic_main_solid"
+        android:title="@string/running_fragment_title"
+        />
     <item
         android:id="@+id/navigation_signup"
         android:icon="@drawable/ic_main_solid"
         android:title="@string/signup_fragment_title"
         />
-    <item
-        android:id="@+id/navigation_page1"
-        android:icon="@drawable/ic_main_solid"
-        android:title="@string/page1_fragment_title"
-        />
-    <item
-        android:id="@+id/navigation_page2"
-        android:icon="@drawable/ic_gear_solid"
-        android:title="@string/page2_fragment_title" />
 </menu>

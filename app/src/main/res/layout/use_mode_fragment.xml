@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <FrameLayout
+            android:id="@+id/use_mode_container_usage_mode_all"
+            android:layout_width="match_parent"
+            android:layout_height="749dp"
+            android:gravity="left|top"
+            android:orientation="vertical"
+            android:paddingBottom="32dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="32dp"
+            android:background="@drawable/use_mode_drawable_shape">
+
+            <LinearLayout
+                android:layout_width="346dp"
+                android:layout_height="288dp"
+                android:layout_gravity="top|left"
+                android:layout_marginTop="479dp"
+                android:background="@drawable/use_mode_drawable_shape_1"
+                android:gravity="left|top"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="127dp"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="사용 모드"
+                    android:textColor="#FFFFFFFF"
+                    android:textSize="18dp" />
+
+                <LinearLayout
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_use_mode_skin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="72dp"
+                            android:layout_height="56dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/use_mode_drawable_image_1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="피부 미용"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_use_mode_scalp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="56dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/use_mode_drawable_image_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="두피관리"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_use_mode_ache"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="56dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/use_mode_drawable_image_2" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="통증관리"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="305dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="32dp"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_use_mode_brain"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="56dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/use_mode_drawable_image_3" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="뇌건강"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/btn_use_mode_normal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal|top"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="56dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/use_mode_drawable_image_4" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="21dp"
+                            android:layout_marginTop="2dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:includeFontPadding="false"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="기본동작"
+                            android:textColor="#FFFAFAF9"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="21dp"
+                        android:layout_weight="1"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_therapy_history_list"
+                android:layout_width="match_parent"
+                android:layout_height="345dp"
+                android:layout_marginTop="114dp"
+                android:layout_marginBottom="290dp"
+                android:layout_gravity="left"
+                android:background="@drawable/use_mode_container_therapy_history_list"
+                android:gravity="left|top"
+                android:orientation="vertical"
+                android:paddingBottom="16dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="16dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_user_mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+
+                <TextView
+                    android:id="@+id/text_empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="데이터가 없습니다."
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_recent_treatment_title"
+                android:layout_width="177dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="59dp"
+                android:layout_gravity="top|left"
+                android:background="@drawable/use_mode_container_recent_treatment_title"
+                android:gravity="left|top"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp">
+
+                <LinearLayout
+                    android:id="@+id/container_button_recent_treatment"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/use_mode_container_button_recent_treatment"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="4dp">
+
+                    <TextView
+                        android:id="@+id/text_button_recent_treatment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:gravity="left|center_vertical"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="최근 치료"
+                        android:textColor="#FFFAFAF9"
+                        android:textSize="14dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/container_top_menu"
+                android:layout_width="369dp"
+                android:layout_height="64dp"
+                android:layout_gravity="top|left">
+
+                <ImageView
+                    android:id="@+id/container_top_app_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/use_mode_container_top_app_bar" />
+
+                <TextView
+                    android:id="@+id/text_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="289dp"
+                    android:layout_marginRight="26dp"
+                    android:layout_marginTop="22dp"
+                    android:layout_marginBottom="21dp"
+                    android:gravity="left|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="사용자"
+                    android:textColor="#FF292927"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/container_button"
+                    android:layout_width="29.11dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="247.88dp"
+                    android:layout_marginRight="92.02dp"
+                    android:layout_marginTop="21dp"
+                    android:layout_marginBottom="21dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/use_mode_container_button_group" />
+            </FrameLayout>
+        </FrameLayout>
+    </ScrollView>
+
+    </RelativeLayout>
+</layout>

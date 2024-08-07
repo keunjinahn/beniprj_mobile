@@ -24,6 +24,13 @@ interface ApiInterface {
     fun getBeniPrjRoom(@Body body: Requests.GetBeniPrjRoom) : Call<GetBeniPrjRoomResult>
 
     /////////////////////////////////////////////////////////////
-    @POST("/api/v1/add_user/")
+    @POST("/api/v1/add_user")
     fun setNewUserInfo(@Body body: Requests.SetNewUserInfo) : Call<NewUserInfoResult>
+
+    @POST("/api/v1/add_medical_hist")
+    fun setMedicalHist(@Body body: Requests.SetMedicalHist) : Call<SetMedicalHistResult>
+
+    @POST("/api/v1/medical_hist_list")
+    fun getMedicalHist(@Body body: Requests.GetMedicalHist) : Call<GetMedicalHistResult>
+
 }
