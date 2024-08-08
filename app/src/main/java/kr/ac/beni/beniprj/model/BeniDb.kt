@@ -54,15 +54,7 @@ data class MedicalHistItem(
 
 @Parcelize
 data class SetMedicalHistResult(
-    @SerializedName("medicalMainName") val medicalMainName: String,
-    @SerializedName("medicalMainCode") val medicalMainCode: String,
-    @SerializedName("medicalSubName") val medicalSubName: String,
-    @SerializedName("medicalSubCode") val medicalSubCode: String,
-    @SerializedName("operationDuration") val operationDuration: String,
-    @SerializedName("operationHz") val operationHz: String,
-    @SerializedName("operationRate") val operationRate: String,
-    @SerializedName("medicalDate") val medicalDate: String,
-    @SerializedName("fk_user_id") val fkUserId: Int,
+    @SerializedName("id") val id: Int,
 ): Parcelable
 
 data class MedicalHistInfo(

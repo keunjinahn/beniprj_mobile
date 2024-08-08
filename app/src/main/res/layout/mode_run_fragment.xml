@@ -85,15 +85,15 @@
             </LinearLayout>
         </FrameLayout>
         <FrameLayout
+            android:id="@+id/btn_mode_run_face"
             android:layout_width="173dp"
             android:layout_height="128dp"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="200dp"
             android:layout_gravity="top|left"
             android:background="@drawable/mode_run_skin_drawable_shape_2">
-
             <LinearLayout
-                android:id="@+id/btn_mode_run_skin"
+
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
@@ -143,6 +143,7 @@
                 android:src="@drawable/mode_run_skin_image_inbox" />
         </FrameLayout>
         <FrameLayout
+            android:id="@+id/btn_mode_run_neck"
             android:layout_width="173dp"
             android:layout_height="128dp"
             android:layout_marginLeft="210dp"
@@ -200,6 +201,7 @@
                 android:src="@drawable/mode_run_skin_image_inbox" />
         </FrameLayout>
         <FrameLayout
+            android:id="@+id/btn_mode_run_stomach"
             android:layout_width="173dp"
             android:layout_height="128dp"
             android:layout_marginLeft="20dp"
@@ -257,6 +259,7 @@
                 android:src="@drawable/mode_run_skin_image_inbox" />
         </FrameLayout>
         <FrameLayout
+            android:id="@+id/btn_mode_run_cellulite"
             android:layout_width="173dp"
             android:layout_height="128dp"
             android:layout_marginLeft="210dp"
@@ -341,7 +344,7 @@
             android:background="@drawable/mode_run_skin_drawable_shape_6">
 
             <ImageView
-                android:id="@+id/btn_mode_run_skin_player"
+                android:id="@+id/btn_mode_run_skin_start"
                 android:layout_width="64dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="78dp"

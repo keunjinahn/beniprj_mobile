@@ -37,8 +37,8 @@ class Requests {
         @SerializedName("fk_user_id") val fkUserId: Int
     )
 
+
     data class SetMedicalHist(
-        @SerializedName("id") val id: Int,
         @SerializedName("medicalMainName") val medicalMainName: String,
         @SerializedName("medicalMainCode") val medicalMainCode: String,
         @SerializedName("medicalSubName") val medicalSubName: String,
@@ -47,7 +47,7 @@ class Requests {
         @SerializedName("operationHz") val operationHz: String,
         @SerializedName("operationRate") val operationRate: String,
         @SerializedName("medicalDate") val medicalDate: String,
-        @SerializedName("fk_user_id") val fkUserId: Int,
+        @SerializedName("fk_user_id") val fkUserId: Any?,
     )
 
 }

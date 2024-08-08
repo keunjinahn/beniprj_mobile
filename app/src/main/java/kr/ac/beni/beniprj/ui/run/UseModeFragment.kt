@@ -2,33 +2,20 @@ package kr.ac.beni.beniprj.ui.run
 
 import android.annotation.SuppressLint
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
-import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.google.gson.Gson
-import com.google.gson.reflect.TypeToken
 import kr.ac.beni.beniprj.Const
 import kr.ac.beni.beniprj.R
-import kr.ac.beni.beniprj.SendParamInfo
-import kr.ac.beni.beniprj.UserInfo
 import kr.ac.beni.beniprj.databinding.UseModeFragmentBinding
-import kr.ac.beni.beniprj.model.Chat
 import kr.ac.beni.beniprj.model.GetMedicalHistResult
-import kr.ac.beni.beniprj.model.NewChatResult
-import kr.ac.beni.beniprj.model.NewUserInfoResult
 import kr.ac.beni.beniprj.model.request.Requests
 import kr.ac.beni.beniprj.retrofit.ApiResponse
-import kr.ac.beni.beniprj.ui.adapter.ChatListAdapter
 import kr.ac.beni.beniprj.ui.adapter.MedicalHistdapter
 import kr.ac.beni.beniprj.ui.custom.BaseDialog
 import kr.ac.beni.beniprj.ui.custom.CustomYesOrNoDialog
@@ -38,16 +25,17 @@ import kr.ac.beni.beniprj.util.OnThrottleClickListener
 import kr.ac.beni.beniprj.viewmodel.VFViewModel
 import kr.ac.beni.beniprj.model.MedicalHistInfo
 import kr.ac.beni.beniprj.model.MedicalHistItem
-import kr.ac.beni.beniprj.viewmodel.VFParamModel
-import javax.annotation.Nonnull
-import javax.annotation.Nullable
+import kr.ac.beni.beniprj.util.CommonUtils.Companion.mapToBundle
 
 class UseModeFragment : Fragment(){
     private lateinit var mVFViewModel: VFViewModel
     private lateinit var _binding: UseModeFragmentBinding
     private lateinit var mAdapter: MedicalHistdapter
     private val binding get() = _binding
-    private lateinit var sharedViewModel: VFParamModel
+    private val _dataMapInfo: MutableMap<String,Any> = mutableMapOf(
+        "initialKey" to "initialValue"
+    )
+    //    private val sharedViewModel: VFParamModel by activityViewModels()
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -55,7 +43,6 @@ class UseModeFragment : Fragment(){
     ): View {
         mVFViewModel = ViewModelProvider(this)[VFViewModel::class.java]
         _binding = UseModeFragmentBinding.inflate(inflater,container,false)
-        sharedViewModel = ViewModelProvider(requireActivity())[VFParamModel::class.java]
         return binding.root
     }
 
@@ -79,17 +66,18 @@ class UseModeFragment : Fragment(){
     }
     private fun setUIEvent(){
         CommonUtils.commonLog("use mode fragment setUIEvent..")
-        sharedViewModel.getUseModeType().observe(viewLifecycleOwner, Observer {
-            CommonUtils.commonLog("UseModeFragment useModeType : ${it.toString()}")
-        })
         _binding.btnUseModeSkin.onThrottleClick {
-            sharedViewModel.updateUseModeType("M01")
-            findNavController().navigate(R.id.navigation_mode_run)
+//            sharedViewModel.updateUseModeType(Const.UserModeType.UseModeTypeSkin)
+            _dataMapInfo[Const.MapKeyString.UserID.toString()] = 1
+            _dataMapInfo[Const.MapKeyString.UserModeType.toString()] = Const.UserModeType.SKIN.value
+            val bundle = mapToBundle(_dataMapInfo)
+            findNavController().navigate(R.id.navigation_mode_run,bundle)
         }
     }
     private fun initObserve(){
-//        getMedicalListObserve()
+        getMedicalListObserve()
     }
+
     @SuppressLint("NotifyDataSetChanged")
     private fun getMedicalListObserve(){
         mVFViewModel.getGetMedicalHist().observe(viewLifecycleOwner, EventObserver{

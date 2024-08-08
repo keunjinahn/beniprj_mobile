@@ -5,12 +5,16 @@ import android.content.Intent
 import android.content.pm.InstallSourceInfo
 import android.content.pm.PackageManager
 import android.os.Build
+import android.os.Bundle
+import android.os.Parcelable
 import android.provider.Settings
 import android.util.Log
 import kr.ac.beni.beniprj.Const
 import java.io.IOException
 import java.text.DateFormat
 import java.text.SimpleDateFormat
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.Date
 import java.util.Locale
 import java.util.TimeZone
@@ -114,6 +118,49 @@ class CommonUtils {
             val mainIntent = Intent.makeRestartActivityTask(componentName)
             context.startActivity(mainIntent)
             Runtime.getRuntime().exit(0)
+        }
+        fun mapToBundle(map: MutableMap<String,Any>): Bundle {
+            val bundle = Bundle()
+            for ((key, value) in map) {
+                when (value) {
+                    is Int -> bundle.putInt(key, value)
+                    is Long -> bundle.putLong(key, value)
+                    is String -> bundle.putString(key, value)
+                    is Boolean -> bundle.putBoolean(key, value)
+                    is Float -> bundle.putFloat(key, value)
+                    is Double -> bundle.putDouble(key, value)
+                    is Parcelable -> bundle.putParcelable(key, value)
+                    // Add more types as needed
+                    else -> throw IllegalArgumentException("Unsupported type")
+                }
+            }
+            return bundle
+        }
+
+        fun bundleToMap(map:MutableMap<String,Any>,bundle: Bundle): MutableMap<String, Any> {
+            for (key in bundle.keySet()) {
+                when (val value = bundle.get(key)) {
+                    is String -> map[key] = value
+                    is Int -> map[key] = value
+                    is Long -> map[key] = value
+                    is Float -> map[key] = value
+                    is Double -> map[key] = value
+                    is Boolean -> map[key] = value
+                    is Byte -> map[key] = value
+                    is Short -> map[key] = value
+                    is Char -> map[key] = value
+                    is Parcelable -> map[key] = value
+                    else -> map[key] = value as Any // handle other types or use Any?
+                }
+            }
+
+            return map
+        }
+
+        fun getCurrentTimeAsString(): String {
+            val current = LocalDateTime.now()
+            val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+            return current.format(formatter)
         }
     }
 }

@@ -5,5 +5,315 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        />
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_gravity="left">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mode_run_skin_drawable_image" />
+
+            <TextView
+                android:layout_width="55dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="312dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginBottom="21dp"
+                android:gravity="left|center_vertical"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="사용자"
+                android:textColor="#FF292927"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="139dp"
+                android:layout_height="38dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="115dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="112dp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="피부 미용"
+                android:textColor="#FF292927"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:layout_width="29.11dp"
+                android:layout_height="22dp"
+                android:layout_gravity="top"
+                android:layout_marginLeft="276dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="63.89dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/mode_run_skin_drawable_image_1" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/container_parent_text_skin_beauty"
+            android:layout_width="357dp"
+            android:layout_height="72dp"
+            android:layout_gravity="top|left"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="256dp"
+            android:gravity="left|top"
+            android:includeFontPadding="false"
+            android:lineHeight="24dp"
+            android:text="치료 중인 “피부 미용(얼굴)”은 일주일에 3회 2개월 사용해야 효과가 있습니다"
+            android:textColor="#FF292927"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/container_parent_text_led_therapy"
+            android:layout_width="357dp"
+            android:layout_height="72dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="171dp"
+            android:layout_gravity="top|left"
+            android:gravity="center_horizontal|top"
+            android:includeFontPadding="false"
+            android:lineHeight="48dp"
+            android:text="LED 광치료기 동작 중"
+            android:textColor="#FF34C759"
+            android:textSize="32dp" />
+
+        <LinearLayout
+            android:layout_width="369dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="359dp"
+            android:layout_gravity="top|left"
+            android:gravity="center_horizontal|top"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/running_container_stats_contentcontent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="동작시간"
+                    android:textColor="#FF292927"
+                    android:textSize="12dp" />
+
+                <FrameLayout
+                    android:layout_width="69.39dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse1"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse2"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="0.19dp"
+                        android:layout_marginTop="0.15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="20%"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/running_container_stats_contentcontent1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="주파수"
+                    android:textColor="#FF292927"
+                    android:textSize="12dp" />
+
+                <FrameLayout
+                    android:layout_width="69.39dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/image_ellipse3"
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse3"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:id="@+id/image_ellipse4"
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse4"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="0.19dp"
+                        android:layout_marginTop="0.15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="68%"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/running_container_stats_contentcontent2"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="32dp"
+                android:paddingLeft="32dp"
+                android:paddingRight="32dp"
+                android:paddingTop="32dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="18dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:includeFontPadding="false"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:text="튜티비"
+                    android:textColor="#FF292927"
+                    android:textSize="12dp" />
+
+                <FrameLayout
+                    android:layout_width="69.39dp"
+                    android:layout_height="71dp"
+                    android:layout_marginTop="12dp">
+
+                    <ImageView
+                        android:id="@+id/image_ellipse5"
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse5"
+                        android:scaleType="centerInside" />
+
+                    <ImageView
+                        android:layout_width="63.08dp"
+                        android:layout_height="63.08dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/running_image_ellipse6"
+                        android:scaleType="centerInside" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginRight="0.31dp"
+                        android:layout_marginTop="0.15dp"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:text="80%"
+                        android:textColor="#FF292927"
+                        android:textSize="14dp" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/container_audio_controls"
+            android:layout_width="400dp"
+            android:layout_height="130dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="580dp"
+            android:background="@drawable/running_container_audio_controls"
+            android:paddingLeft="32dp"
+            android:paddingTop="32dp"
+            android:paddingRight="32dp"
+            android:paddingBottom="32dp">
+
+            <ImageView
+                android:id="@+id/image_play_button"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="63dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/running_image_play_button" />
+
+            <ImageView
+                android:id="@+id/image_play_button1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_gravity="top|left"
+                android:layout_marginLeft="178dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/running_image_play_button1" />
+        </FrameLayout>
+    </RelativeLayout>
 </layout>

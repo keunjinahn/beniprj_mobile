@@ -14,6 +14,7 @@ import kr.ac.beni.beniprj.model.GetMedicalHistResult
 import kr.ac.beni.beniprj.model.NewChatResult
 import kr.ac.beni.beniprj.model.NewUserInfoResult
 import kr.ac.beni.beniprj.model.SendChatResult
+import kr.ac.beni.beniprj.model.SetMedicalHistResult
 import kr.ac.beni.beniprj.model.request.Requests
 import kr.ac.beni.beniprj.repository.VFRepository
 import kr.ac.beni.beniprj.retrofit.ApiResponse
@@ -57,6 +58,11 @@ class VFViewModel constructor(application: Application)
     fun callGetMedicalHist(request: Requests.GetMedicalHist){ getMedicalHist.value = Event(request) }
     fun getGetMedicalHist(): LiveData<Event<ApiResponse<GetMedicalHistResult>>> {return getMedicalHistLiveData}
 
+    private var setMedicalHist: MutableLiveData<Event<Requests.SetMedicalHist>> = MutableLiveData()
+    private var setMedicalHistLiveData: LiveData<Event<ApiResponse<SetMedicalHistResult>>> = Transformations.switchMap(setMedicalHist) { VFRepository.setMedicalHist(it.peekContent()) }
+    fun callSetMedicalHist(request: Requests.SetMedicalHist){ setMedicalHist.value = Event(request) }
+    fun getSetMedicalHist(): LiveData<Event<ApiResponse<SetMedicalHistResult>>> {return setMedicalHistLiveData}
+
     //프래그먼트 간 데이터 전달
 //    val sendParamInfo: LiveData<SendParamInfo> get() = _sendParamInfo
 //    fun setSendParamInfo(value: SendParamInfo) {
@@ -70,4 +76,5 @@ class VFViewModel constructor(application: Application)
     fun updateUseModeType(input: CharSequence) {
         _useModeType.value = input
     }
+
 }

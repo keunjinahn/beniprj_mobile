@@ -4,7 +4,10 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
@@ -18,6 +21,7 @@ import kr.ac.beni.beniprj.service.BackgroundService
 import kr.ac.beni.beniprj.util.CommonUtils
 import kr.ac.beni.beniprj.util.OnThrottleClickListener
 import kr.ac.beni.beniprj.util.PreferenceUtil
+import kr.ac.beni.beniprj.viewmodel.VFParamModel
 import kr.ac.beni.beniprj.viewmodel.VFViewModel
 
 
@@ -26,7 +30,7 @@ class RunActivity : AppCompatActivity(){
     private lateinit var binding: ActivityRunBinding
     private lateinit var mVFViewModel: VFViewModel
     private lateinit var navView: BottomNavigationView
-
+    private val sharedViewModel: VFParamModel by viewModels()
     companion object{
         fun startActivity(context: Context/*, applications: Applications*/) {
             val intent = Intent(context, RunActivity::class.java)
@@ -44,6 +48,8 @@ class RunActivity : AppCompatActivity(){
         initView()
         setUIEvent()
         setupControls()
+        sharedViewModel.updateUseModeType(Const.UserModeType.SKIN)
+
     }
 
     fun initView(){
@@ -55,7 +61,7 @@ class RunActivity : AppCompatActivity(){
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
         supportActionBar?.hide()
-        navView.selectedItemId = R.id.navigation_running
+        navView.selectedItemId = R.id.navigation_use_mode
 
 
         val intent = Intent(this, BackgroundService::class.java)
